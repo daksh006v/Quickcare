@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 
 export default function LandingPage() {
@@ -7,13 +8,13 @@ export default function LandingPage() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm font-headline tracking-tight">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
-          <div className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">QuickCare</div>
+          <Link to="/" className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">QuickCare</Link>
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a className="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600" href="#">Find Care</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" href="#">Traveler Mode</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" href="#">Symptoms</a>
-            <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" href="#">History</a>
+            <Link className="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600" to="/search">Find Care</Link>
+            <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" to="#">Traveler Mode</Link>
+            <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" to="/symptom-checker">Symptoms</Link>
+            <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" to="#">History</Link>
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
