@@ -5,6 +5,8 @@ import DoctorSearch from './pages/DoctorSearch';
 import SymptomChecker from './pages/SymptomChecker';
 import TravelerMode from './pages/TravelerMode';
 import DoctorDetail from './pages/DoctorDetail';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/symptom-checker" element={<SymptomChecker />} />
         <Route path="/traveler-mode" element={<TravelerMode />} />
         <Route path="/doctor/:id" element={<DoctorDetail />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

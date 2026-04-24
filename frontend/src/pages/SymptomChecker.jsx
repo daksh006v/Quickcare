@@ -19,7 +19,7 @@ export default function SymptomChecker() {
                 </div>
                 <div className="flex items-center gap-4">
                     <ThemeToggle />
-                    <button className="hidden md:block px-4 py-2 text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200 font-label">Sign In</button>
+                    <Link to="/login" className="hidden md:block px-4 py-2 text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200 font-label">Sign In</Link>
                     <button className="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold hover:opacity-90 transition-all scale-95 active:opacity-80 flex items-center gap-2">
                         <span className="material-symbols-outlined text-sm" data-icon="emergency">emergency</span>
                         Emergency Call
