@@ -19,7 +19,7 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <button className="hidden lg:block text-slate-600 dark:text-slate-400 font-medium px-4 py-2 hover:text-blue-500 transition-colors">Sign In</button>
+            <Link to="/login" className="hidden lg:block text-slate-600 dark:text-slate-400 font-medium px-4 py-2 hover:text-blue-500 transition-colors">Sign In</Link>
             <button className="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold transition-transform scale-95 active:opacity-80 flex items-center gap-2">
               <span className="material-symbols-outlined text-[20px]">emergency</span>
               Emergency Call
