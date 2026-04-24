@@ -108,9 +108,9 @@ export default function DoctorSearch() {
                 <button className="text-primary font-bold text-sm hover:underline">View All Slots</button>
               </div>
               <div className="flex gap-3">
-                <button className="flex-1 py-3 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                <Link to="/doctor/1" className="flex-1 py-3 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
                   <span className="material-symbols-outlined text-lg">calendar_month</span> Book Visit
-                </button>
+                </Link>
                 <button className="p-3 bg-surface-container-highest text-on-surface rounded-xl hover:bg-surface-container-high transition-colors">
                   <span className="material-symbols-outlined">call</span>
                 </button>
@@ -158,9 +158,9 @@ export default function DoctorSearch() {
                 <button className="text-primary font-bold text-sm hover:underline">View All Slots</button>
               </div>
               <div className="flex gap-3">
-                <button className="flex-1 py-3 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                <Link to="/doctor/2" className="flex-1 py-3 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
                   <span className="material-symbols-outlined text-lg">calendar_month</span> Book Visit
-                </button>
+                </Link>
                 <button className="p-3 bg-surface-container-highest text-on-surface rounded-xl hover:bg-surface-container-high transition-colors">
                   <span className="material-symbols-outlined">call</span>
                 </button>
