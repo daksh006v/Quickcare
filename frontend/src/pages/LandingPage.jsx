@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
 
 export default function LandingPage() {
+  const navigate = useNavigate();
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
       {/* TopNavBar */}
@@ -49,7 +50,10 @@ export default function LandingPage() {
                   <span className="material-symbols-outlined text-outline">medical_services</span>
                   <input className="bg-transparent border-none focus:ring-0 w-full text-on-surface" placeholder="Specialty or Symptom" type="text"/>
                 </div>
-                <button className="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                <button
+                  onClick={() => navigate('/search')}
+                  className="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2"
+                >
                   <span className="material-symbols-outlined">search</span>
                   Find care now
                 </button>
@@ -169,7 +173,7 @@ export default function LandingPage() {
                       <p className="text-[10px] uppercase tracking-wider text-outline mb-1">Consultation</p>
                       <p className="text-2xl font-bold text-primary">¥8,500</p>
                     </div>
-                    <button className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</button>
+                    <Link to="/doctor/1" className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</Link>
                   </div>
                 </div>
               </div>
@@ -198,7 +202,7 @@ export default function LandingPage() {
                       <p className="text-[10px] uppercase tracking-wider text-outline mb-1">Consultation</p>
                       <p className="text-2xl font-bold text-primary">¥10,000</p>
                     </div>
-                    <button className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</button>
+                    <Link to="/doctor/2" className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</Link>
                   </div>
                 </div>
               </div>
@@ -227,7 +231,7 @@ export default function LandingPage() {
                       <p className="text-[10px] uppercase tracking-wider text-outline mb-1">Consultation</p>
                       <p className="text-2xl font-bold text-primary">¥9,200</p>
                     </div>
-                    <button className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</button>
+                    <Link to="/doctor/3" className="bg-surface-container-highest hover:bg-primary-fixed text-on-primary-fixed-variant px-5 py-2.5 rounded-xl font-bold transition-colors">Book Now</Link>
                   </div>
                 </div>
               </div>
