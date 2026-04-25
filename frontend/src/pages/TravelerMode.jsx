@@ -8,14 +8,14 @@ export default function TravelerMode() {
       {/* TopNavBar */}
       <header className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-200">
         <div className="flex justify-between items-center px-8 h-20 max-w-[1280px] mx-auto">
-          <Link to="/" className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 hover:opacity-90 transition-all duration-200">
-            <span className="material-symbols-outlined text-blue-500 dark:text-blue-400" style={{ fontVariationSettings: "'FILL' 1" }}>favorite</span>
+          <Link to="/" className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 flex items-center gap-2 hover:opacity-90 transition-all duration-200">
+            <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
             QuickCare
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-tight">
-            <Link className="text-blue-600 dark:text-blue-400 border-b-2 border-blue-500 pb-1 hover:opacity-90 transition-all duration-200" to="/search">Find Care</Link>
-            <Link className="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors duration-200" to="#">Doctors</Link>
-            <Link className="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors duration-200" to="/traveler-mode">Traveler Mode</Link>
+            <Link className="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors duration-200" to="/search">Find Care</Link>
+            <Link className="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors duration-200" to="/search">Doctors</Link>
+            <Link className="text-blue-600 dark:text-blue-400 border-b-2 border-blue-500 pb-1 hover:opacity-90 transition-all duration-200" to="/traveler-mode">Traveler Mode</Link>
             <Link className="text-slate-600 dark:text-slate-400 hover:text-blue-500 transition-colors duration-200" to="/symptom-checker">Symptoms</Link>
           </nav>
           <div className="flex items-center gap-3">
@@ -175,8 +175,8 @@ export default function TravelerMode() {
       {/* Footer */}
       <footer className="w-full border-t bg-white dark:bg-slate-950 border-slate-100 dark:border-slate-800">
         <div className="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-[1280px] mx-auto gap-8">
-          <div className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <span className="material-symbols-outlined text-blue-500 dark:text-blue-400" style={{ fontVariationSettings: "'FILL' 1" }}>favorite</span>
+          <div className="text-lg font-bold tracking-tighter text-blue-800 dark:text-blue-300 flex items-center gap-2">
+            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
             QuickCare
           </div>
           <div className="flex flex-wrap justify-center gap-6">

@@ -9,7 +9,10 @@ export default function SymptomChecker() {
         <nav className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
             <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
                 <div className="flex items-center gap-8">
-                    <Link to="/" className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 font-headline">QuickCare</Link>
+                    <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 font-headline">
+                      <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
+                      QuickCare
+                    </Link>
                     <div className="hidden md:flex items-center gap-6">
                         <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200 font-label" to="/search">Find Care</Link>
                         <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200 font-label" to="/traveler-mode">Traveler Mode</Link>
@@ -178,7 +181,10 @@ export default function SymptomChecker() {
 
         {/* Footer */}
         <footer className="w-full py-12 px-6 flex flex-col items-center space-y-6 bg-slate-50 dark:bg-slate-950 mt-auto">
-            <span className="text-lg font-black text-slate-900 dark:text-slate-100 font-headline">QuickCare</span>
+            <span className="text-lg font-black text-slate-900 dark:text-slate-100 font-headline flex items-center gap-2">
+              <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
+              QuickCare
+            </span>
             <div className="flex flex-wrap justify-center gap-6">
                 <a className="text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100 text-xs font-label uppercase tracking-widest transition-opacity" href="#">Privacy Policy</a>
                 <a className="text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100 text-xs font-label uppercase tracking-widest transition-opacity" href="#">Terms of Service</a>

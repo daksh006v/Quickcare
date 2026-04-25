@@ -9,7 +9,10 @@ export default function LandingPage() {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm font-headline tracking-tight">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
-          <Link to="/" className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">QuickCare</Link>
+          <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">
+            <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
+            QuickCare
+          </Link>
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
             <Link className="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600" to="/search">Find Care</Link>
@@ -287,7 +290,10 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="w-full bg-slate-50 dark:bg-slate-950 border-t-0 mt-auto font-label">
         <div className="w-full py-12 px-6 flex flex-col items-center space-y-8 max-w-screen-2xl mx-auto">
-          <div className="text-lg font-black text-slate-900 dark:text-slate-100">QuickCare</div>
+          <div className="text-lg font-black text-slate-900 dark:text-slate-100 flex items-center gap-2">
+            <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
+            QuickCare
+          </div>
           <div className="flex flex-wrap justify-center gap-8 text-xs tracking-wide">
             <a className="text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100 transition-opacity opacity-80 underline text-blue-600" href="#">Privacy Policy</a>
             <a className="text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100 transition-opacity opacity-80" href="#">Terms of Service</a>

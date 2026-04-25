@@ -9,7 +9,10 @@ export default function DoctorSearch() {
       <header className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto font-manrope tracking-tight">
           <div className="flex items-center gap-8">
-            <Link to="/" className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">QuickCare</Link>
+            <Link to="/" className="flex items-center gap-2 text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300">
+              <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>medical_services</span>
+              QuickCare
+            </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link className="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600" to="/search">Find Care</Link>
               <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-colors duration-200" to="/traveler-mode">Traveler Mode</Link>
