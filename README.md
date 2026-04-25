@@ -1,308 +1,182 @@
 <div align="center">
 
-# 🏥 QuickCare
+# QuickCare
+**Trusted Healthcare for Travelers, Anywhere, Anytime**
 
-### *Trusted Healthcare for Travelers, Anywhere, Anytime*
+*QuickCare is a comprehensive medical assistance platform designed specifically for travelers. It eliminates the anxiety of falling ill in unfamiliar territories by instantly connecting users with vetted doctors, transparent pricing, and AI-driven symptom triage based on their real-time GPS location.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
-[![Figma Design](https://img.shields.io/badge/Figma-Design%20Available-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/rh9bS5tmUnP1eSDasYl0HQ/quickcare)
-
-<br/>
-
-> **"How can travelers quickly access trusted, affordable healthcare in unfamiliar locations during urgent situations?"**
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Available-brightgreen?style=for-the-badge&logo=render)](https://quickcare-rto6.onrender.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)]()
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)]()
 
 <br/>
-
-QuickCare is a smart, traveler-focused healthcare platform that connects users with verified doctors, clinics, and pharmacies near their current location — in minutes. It eliminates the confusion, cost uncertainty, and language barriers that travelers face when seeking urgent medical attention in unfamiliar cities or countries.
-
 </div>
 
----
-
-## 📌 Table of Contents
-
-- [The Problem](#-the-problem)
-- [The Solution](#-the-solution)
-- [Core Features](#-core-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [Getting Started](#-getting-started)
-- [Project Structure](#-project-structure)
-- [API Overview](#-api-overview)
-- [Design](#-design)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
+## Navigation
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Screenshots](#screenshots)
+- [Comprehensive Features](#comprehensive-features)
+- [Folder Structure](#folder-structure)
+- [Tech Stack Architecture](#tech-stack-architecture)
+- [Run on Your Device](#run-on-your-device)
+- [Credits & Acknowledgements](#credits--acknowledgements)
 
 ---
 
-## 🚨 The Problem
+## Problem Statement
 
-Traveling to a new city or country is exciting — but falling ill during a trip is a nightmare. Travelers regularly face:
-
-- 🔍 **No trusted recommendations** — Not knowing which hospitals or clinics are reputable and safe.
-- 💬 **Language barriers** — Unable to communicate symptoms effectively with local healthcare providers.
-- 💸 **Hidden costs** — No transparency on consultation fees or treatment costs before visiting.
-- ⏱️ **Time loss** — Wasting precious hours searching for the right type of specialist.
-- 😰 **High stress** — Making medical decisions in an unfamiliar environment during an emergency.
-
-These challenges are especially severe for international travelers, elderly tourists, and solo adventurers who are navigating a healthcare system entirely foreign to them.
+Traveling to a new city or country is an incredible experience, but experiencing a medical emergency during a trip is universally stressful. Travelers constantly struggle with:
+- **Lack of Trusted Guidance:** Inability to differentiate between reputable clinics and unverified practices.
+- **Severe Language Barriers:** Struggling to explain nuanced symptoms to foreign medical staff, leading to misdiagnoses.
+- **Financial Uncertainty:** Facing hidden costs and exorbitant "tourist" medical fees without prior transparency.
+- **Wasted Time:** Spending hours researching the appropriate specialist instead of seeking immediate care.
+- **Extreme Anxiety:** Trying to navigate complex foreign healthcare systems while already feeling vulnerable and sick.
 
 ---
 
-## 💡 The Solution
+## Solution
 
-QuickCare is a centralized, intelligent medical assistance platform that:
+**[Experience the live QuickCare application here](https://quickcare-rto6.onrender.com/)**
 
-- Pinpoints **verified healthcare providers** based on a traveler's real-time location.
-- Provides **full transparency** — fees, specialties, available languages, and live availability.
-- Guides users through a **symptom-based triage system** to the most suitable type of doctor.
-- Offers **teleconsultation** when in-person care is not immediately accessible.
-- Extends support to **pharmacy discovery and medicine comparison** to complete the care loop.
+QuickCare completely reimagines the travel healthcare experience by acting as a centralized, intelligent medical concierge in your pocket. 
 
----
-
-## ✨ Core Features
-
-### 🗺️ Location-Based Provider Discovery
-- Detect the user's current GPS location automatically.
-- Display a map view and list view of nearby verified hospitals, clinics, and independent doctors.
-- Real-time availability status for each provider.
-
-### ✅ Verified & Trusted Providers
-- All healthcare providers are vetted and badge-verified on the platform.
-- Patient ratings and reviews are displayed for transparency and trust.
-- Clear indication of specialties supported at each facility.
-
-### 💬 Transparent Information
-- Upfront consultation fee ranges — no hidden charges.
-- Languages spoken by the doctor, so patients can communicate comfortably.
-- Estimated waiting times and appointment slots.
-
-### 🩺 Quick Help — Symptom-to-Specialist Triage
-- Users describe their symptoms in plain language or select from common health concerns.
-- AI-assisted logic recommends the most appropriate type of specialist.
-- Reduces decision fatigue in high-stress urgent situations.
-
-### 🔎 Smart Filters
-- **Distance** — Show providers within a selected radius.
-- **Cost Range** — Filter by consultation fee budget.
-- **Language** — Find doctors who speak the user's language.
-- **Urgency** — Prioritize emergency/walk-in services vs. scheduled appointments.
-- **Specialty** — Filter by medical specialty (e.g., general physician, dermatology, pediatrics).
-
-### 🖥️ Teleconsultation
-- When no suitable in-person care is nearby, connect users to verified remote specialists via video.
-- Secure, private, and available around the clock.
-
-### 💊 Pharmacy & Medicine Support
-- Locate nearby pharmacies post-consultation.
-- Compare medicine availability and pricing across multiple pharmacies.
-- Ensures travelers can complete their prescribed treatment affordably.
+By leveraging geolocation and modern web technologies, QuickCare:
+1. **Instantly Pinpoints Care:** Automatically maps your exact location to the nearest verified healthcare providers.
+2. **Guarantees Transparency:** Displays upfront consultation fees, accepted insurances, and spoken languages before you ever book.
+3. **Automates Triage:** Uses a localized AI Symptom Checker to evaluate your condition and recommend the exact type of specialist you need, removing the guesswork.
+4. **Closes the Loop:** Guides you to the nearest open pharmacies to fulfill your prescriptions post-visit.
 
 ---
 
-## 🛠️ Tech Stack
+## Screenshots
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | React.js, Tailwind CSS |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB (Atlas) |
-| **Authentication** | JWT (JSON Web Tokens) |
-| **Maps & Location** | Google Maps API / Mapbox |
-| **Real-time** | Socket.IO |
-| **Teleconsultation** | WebRTC / Twilio Video |
-| **Design** | Figma |
-| **Version Control** | Git & GitHub |
+| Page Name | Screenshot | Description |
+|-----------|------------|-------------|
+| **Landing Page** | <img src="frontend/screenshots/landing-page.png" width="400" /> | Introduces the core value proposition, features quick access emergency buttons, and previews top-rated local doctors. |
+| **Doctor Search** | <img src="frontend/screenshots/doctor-search.png" width="400" /> | A powerful directory featuring live map integration and deep filtering by distance, budget, and spoken languages. |
+| **Symptom Checker** | <img src="frontend/screenshots/symptom-checker.png" width="400" /> | An intuitive AI chat interface that processes plain-language symptom descriptions to output actionable medical advice. |
+| **Doctor Profile** | <img src="frontend/screenshots/doctor-detail.png" width="400" /> | A comprehensive provider profile showcasing educational background, verified patient reviews, and real-time scheduling slots. |
+| **Traveler Mode** | <img src="frontend/screenshots/traveler-mode.png" width="400" /> | A high-contrast emergency dashboard featuring one-tap translation cards, local SOS hotlines, and immediate triage. |
+| **Login** | <img src="frontend/screenshots/login.png" width="400" /> | Secure, session-based authentication portal for returning users to access their medical history. |
+| **Signup** | <img src="frontend/screenshots/signup.png" width="400" /> | A frictionless onboarding experience for new travelers joining the platform. |
 
 ---
 
-## 🏗️ System Architecture
+## Comprehensive Features
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                        CLIENT (React)                        │
-│   Landing Page → Symptom Triage → Search Results → Profile  │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ REST API / WebSocket
-┌──────────────────────────▼──────────────────────────────────┐
-│                   BACKEND (Node + Express)                    │
-│                                                              │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────────┐  │
-│  │   Auth API  │  │  Search API  │  │  Teleconsult API   │  │
-│  └─────────────┘  └──────────────┘  └────────────────────┘  │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────────┐  │
-│  │ Symptom API │  │ Pharmacy API │  │  Notification API  │  │
-│  └─────────────┘  └──────────────┘  └────────────────────┘  │
-└──────────────────────────┬──────────────────────────────────┘
-                           │
-┌──────────────────────────▼──────────────────────────────────┐
-│                    DATA LAYER (MongoDB)                       │
-│   Users │ Providers │ Clinics │ Pharmacies │ Appointments    │
-└─────────────────────────────────────────────────────────────┘
+### Location-Based Discovery Engine
+The core of QuickCare is its spatial awareness. Using standard browser Geolocation APIs, the application plots a radius around the user and queries the database for active medical facilities. This eliminates the need for users to know their exact address or neighborhood in a foreign city.
+
+### AI-Powered Triage Chatbot
+Instead of forcing users to self-diagnose (which often leads to unnecessary panic), QuickCare incorporates an intelligent chat interface. Users simply type what hurts, and the system parses the NLP input to suggest whether they need a General Practitioner, an Urgent Care clinic, or the ER.
+
+### Verified Provider Network
+Trust is the most critical component of foreign healthcare. Every doctor listed on QuickCare undergoes a rigorous vetting process. Their profiles display verified credentials, past patient ratings, and transparent base consultation fees, preventing travelers from being overcharged.
+
+### Traveler Mode (Emergency SOS)
+When every second counts, Traveler Mode strips away non-essential UI elements. It provides giant, high-contrast buttons to call local emergency services (automatically mapping to the country's local 911 equivalent), and displays pre-translated medical phrases to show to local responders.
+
+---
+
+## Folder Structure
+
+QuickCare utilizes a **Coupled Architecture** monorepo structure, separating the client interface from the backend API services.
+
+```text
+QuickCare/
+├── backend/                  # Node.js & Express API Server
+│   ├── config/               # Database connection and environment configurations
+│   ├── controllers/          # Business logic for handling API requests
+│   ├── middleware/           # Custom error handlers and authentication checks
+│   ├── models/               # Mongoose schemas for MongoDB data structures
+│   ├── routes/               # API endpoint definitions and router logic
+│   └── server.js             # Entry point: Mounts routes and serves the frontend build
+│
+├── frontend/                 # React 19 Client Application
+│   ├── public/               # Static assets that bypass the bundler
+│   ├── screenshots/          # Repository documentation images
+│   └── src/
+│       ├── components/       # Reusable, modular UI components (Buttons, Navbars)
+│       ├── pages/            # Full-screen route components (Landing, Search, Detail)
+│       ├── App.jsx           # Root component defining React Router routes
+│       ├── index.css         # Global Tailwind CSS directives and design tokens
+│       └── main.jsx          # React DOM mounting script
+│
+├── .gitignore                # Specifies intentionally untracked files
+└── README.md                 # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## Tech Stack Architecture
 
-### Prerequisites
+QuickCare is built on a modern, highly responsive JavaScript stack designed for performance and rapid iteration.
 
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v18 or above)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- [MongoDB](https://www.mongodb.com/) (local or Atlas connection)
-- [Git](https://git-scm.com/)
+### Frontend Client
+- **[React 19](https://react.dev/)**: The core UI library. We leverage the latest React 19 features for concurrent rendering and optimized state management.
+- **[Vite 8](https://vitejs.dev/)**: The lightning-fast build tool and development server, utilizing Rolldown for near-instant Hot Module Replacement (HMR).
+- **[Tailwind CSS v3](https://tailwindcss.com/)**: A utility-first CSS framework used to construct the custom design system directly within the JSX, ensuring consistent padding, typography, and dark-mode styling.
+- **[React Router v7](https://reactrouter.com/)**: Handles complex client-side routing, enabling a seamless Single Page Application (SPA) experience without page reloads.
+- **[Lucide React](https://lucide.dev/)**: A clean, beautiful, and consistent open-source icon library used extensively across the UI.
 
-### Installation
+### Backend Services
+- **[Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/)**: A lightweight, non-blocking runtime and web framework that handles API routing and securely serves the compiled frontend assets in production.
+- **[MongoDB](https://www.mongodb.com/) & [Mongoose](https://mongoosejs.com/)**: *(Infrastructure ready)* A NoSQL document database ideal for storing complex, nested medical provider data and user profiles.
 
+### Deployment Operations
+- **[Render](https://render.com/)**: The application is deployed as a unified Web Service. The Node backend intercepts API calls while passing all standard traffic to the pre-compiled Vite static `dist` folder.
+
+---
+
+## Run on Your Device
+
+Want to explore the code or run your own local instance of QuickCare? Follow these exact steps to get the project running on your local machine.
+
+### 1. System Requirements
+- Ensure **[Node.js](https://nodejs.org/en/download/)** (version 18 or higher) is installed.
+- Ensure **[Git](https://git-scm.com/downloads)** is installed.
+
+### 2. Clone the Repository
+Open your terminal and pull down the source code:
 ```bash
-# 1. Clone the repository
 git clone https://github.com/daksh006v/Quickcare.git
 cd Quickcare
-
-# 2. Install backend dependencies
-cd backend
-npm install
-
-# 3. Install frontend dependencies
-cd ../frontend
-npm install
 ```
 
-### Environment Variables
-
-Create a `.env` file in the `/backend` directory:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-MAPS_API_KEY=your_google_maps_api_key
-TWILIO_ACCOUNT_SID=your_twilio_account_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-```
-
-### Running the Application
+### 3. Install Dependencies & Start the Application
+QuickCare's frontend is isolated in the `frontend` directory. 
 
 ```bash
-# Start the backend server
-cd backend
-npm run dev
-
-# In a new terminal, start the frontend
+# Navigate into the frontend folder
 cd frontend
+
+# Install all required NPM packages
+npm install
+
+# Boot up the Vite development server
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173` (frontend) and `http://localhost:5000` (backend API).
+### 4. View the App
+Once the server starts, open your web browser and navigate to:
+👉 **`http://localhost:5173`**
+
+*(Note: The backend server is currently configured for production deployment. Running the frontend via Vite as shown above provides the complete UI experience).*
 
 ---
 
-## 📁 Project Structure
+## Credits & Acknowledgements
 
-```
-Quickcare/
-├── backend/
-│   ├── controllers/        # Route handler logic
-│   ├── models/             # Mongoose data models
-│   ├── routes/             # Express API routes
-│   ├── services/           # Business logic & external services
-│   ├── middleware/         # Auth, error handling middleware
-│   ├── utils/              # Helper utilities
-│   └── server.js           # Entry point
-│
-├── frontend/
-│   ├── public/             # Static assets
-│   └── src/
-│       ├── components/     # Reusable UI components
-│       ├── pages/          # Application pages/routes
-│       ├── hooks/          # Custom React hooks
-│       ├── context/        # Global state (Context API)
-│       ├── services/       # API call functions
-│       ├── utils/          # Frontend utilities
-│       └── App.jsx         # Root component
-│
-└── README.md
-```
+This project was brought to life by dedicated developers striving to make global healthcare safer and more accessible.
+
+- **Lead Developer / Designer:** [daksh006v](https://github.com/daksh006v)
+- **UI/UX Inspiration:** Built using modern accessible design principles tailored for high-stress emergency situations.
+- **Icons & Assets:** Powered by [Lucide](https://lucide.dev/) and Google Material Symbols.
+- **Special Thanks:** To the open-source maintainers of React, Vite, and Express who make platforms like this possible.
 
 ---
-
-## 📡 API Overview
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/auth/register` | Register a new user |
-| `POST` | `/api/auth/login` | Login and receive JWT |
-| `GET` | `/api/providers/nearby` | Get nearby doctors/clinics |
-| `GET` | `/api/providers/:id` | Get provider details |
-| `POST` | `/api/triage/symptom` | Submit symptoms for specialist recommendation |
-| `GET` | `/api/pharmacies/nearby` | Get nearby pharmacies |
-| `POST` | `/api/appointments/book` | Book an appointment |
-| `GET` | `/api/teleconsult/available` | Get available remote doctors |
-| `POST` | `/api/teleconsult/session` | Initiate a teleconsultation session |
-
-> Full API documentation will be available via Postman collection (coming soon).
-
----
-
-## 🎨 Design
-
-The complete UI/UX design for QuickCare is available on Figma:
-
-🔗 **[View Figma Design](https://www.figma.com/design/rh9bS5tmUnP1eSDasYl0HQ/quickcare)**
-
-The design follows a clean, trust-focused aesthetic with:
-- High contrast, accessible color palette
-- Intuitive card-based provider listings
-- Map-first layout for location discovery
-- Mobile-first responsive design
-- Calm, reassuring UI tones suited for medical contexts
-
----
-
-## 🗓️ Roadmap
-
-- [x] Project ideation & problem definition
-- [x] UI/UX Design (Figma)
-- [ ] Backend API development (Auth, Providers, Triage)
-- [ ] Frontend development (Core pages)
-- [ ] Maps & location integration
-- [ ] Symptom triage AI logic
-- [ ] Pharmacy search module
-- [ ] Teleconsultation integration (WebRTC)
-- [ ] Testing & QA
-- [ ] Production deployment
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/your-feature-name`
-3. **Commit** your changes: `git commit -m 'feat: add some feature'`
-4. **Push** to the branch: `git push origin feature/your-feature-name`
-5. **Open** a Pull Request
-
-Please follow conventional commit messages and ensure code is properly formatted before submitting a PR.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
 <div align="center">
-
-**Built with ❤️ to make healthcare accessible for every traveler.**
-
-*QuickCare — Find the Right Care, Right Now.*
-
+<i>QuickCare — Find the Right Care, Right Now.</i>
 </div>

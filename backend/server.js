@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+const path = require('path');
+// const connectDB = require('./config/db');
 
 // Load environment variables
 dotenv.config();
 
-// Connect to MongoDB
-connectDB();
+// Connect to MongoDB (Disabled for frontend-only deployment)
+// connectDB();
 
 const app = express();
 
@@ -17,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // ─── Routes ───────────────────────────────────────────────────────────────────
-app.use('/', require('./routes/healthRoutes'));
+app.use('/api/health', require('./routes/healthRoutes'));
 
 // Register feature routes here as they are built
 app.use('/api/v1/auth',      require('./routes/authRoutes'));
@@ -27,6 +28,16 @@ app.use('/api/v1/bookings',  require('./routes/bookingRoutes'));
 // app.use('/api/triage',       require('./routes/triageRoutes'));
 // app.use('/api/pharmacies',   require('./routes/pharmacyRoutes'));
 // app.use('/api/teleconsult',  require('./routes/teleconsultRoutes'));
+
+// ─── Serve Frontend (Coupled Architecture) ───────────────────────────────────
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+app.get('*', (req, res, next) => {
+  if (req.originalUrl.startsWith('/api')) {
+    return next();
+  }
+  res.sendFile(path.resolve(__dirname, '../frontend/dist', 'index.html'));
+});
 
 // ─── Error Handling (must come AFTER all routes) ───────────────────────────────
 app.use(require('./middleware/notFound'));
