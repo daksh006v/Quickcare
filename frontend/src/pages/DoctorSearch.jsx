@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function DoctorSearch() {
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+      <SEO 
+        title="Find Care - QuickCare" 
+        description="Search and filter verified English-speaking doctors by location, specialty, price, and distance."
+      />
       {/* TopNavBar */}
       <header className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto font-manrope tracking-tight">

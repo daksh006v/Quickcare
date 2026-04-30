@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import { useAuth } from '../hooks/useAuth';
+import SEO from '../components/common/SEO';
 
 export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
@@ -34,6 +35,10 @@ export default function Signup() {
 
   return (
     <div className="bg-surface-dim text-on-surface min-h-screen flex items-center justify-center p-4 md:p-8" style={{ fontFamily: "'Manrope', sans-serif" }}>
+      <SEO 
+        title="Create Account - QuickCare" 
+        description="Join QuickCare to access verified English-speaking doctors globally. Secure your health journey today."
+      />
       <main className="w-full max-w-[1400px] bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col lg:flex-row shadow-[0_12px_40px_rgba(6,14,32,0.4)] relative z-10 min-h-[800px]">
         {/* Left Image Section */}
         <div className="hidden lg:flex lg:w-1/2 relative bg-surface-container-highest p-12 flex-col justify-between">
