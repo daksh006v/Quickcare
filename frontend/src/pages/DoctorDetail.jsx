@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function DoctorDetail() {
   return (
     <div className="bg-surface-dim text-on-surface min-h-screen pb-24" style={{ fontFamily: "'Manrope', sans-serif" }}>
+      <SEO 
+        title="Dr. Sarah Jenkins - QuickCare" 
+        description="Book an appointment with Dr. Sarah Jenkins, Cardiology Specialist. View availability, transparent pricing, and verified patient reviews."
+      />
       {/* Top Navigation Bar */}
       <nav className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto sticky top-0 z-50 backdrop-blur-2xl bg-surface-container-high/80 border-b border-outline-variant/20">
         <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
@@ -46,8 +51,9 @@ export default function DoctorDetail() {
           <div className="md:col-span-2 bg-surface-container-low rounded-xl p-8 relative overflow-hidden flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-surface-bright flex-shrink-0">
               <img
-                alt="Doctor profile"
+                alt="Dr. Sarah Jenkins, Cardiology Specialist portrait"
                 className="w-full h-full object-cover"
+                loading="lazy"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA47IhFp8-Y19_xvNtW7n2msqeIfC_n3A3uu9XDGWD4Pnr4Ovoz3XkVwdZC0AySWc2GVXLBdE5tk1_xXttVgxVS1pcQwvXFiDW6ibi_marEnv0_xhV-fG9pbE51UZEP_GCVyT3idJc9Qa9Esg71sNLYJVyU5_U7FqwLxc66MIgiQT8KsQzfES6SvyC6uewwRycGyu7qwFZWVNY2mB7QbWziqIZNpQyVlPV2EU28wm6GbxO3uBktkUAHAHH1Maw-y0GWHO8Ah_LSV0Y"
               />
             </div>

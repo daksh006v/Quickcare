@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import { useAuth } from '../hooks/useAuth';
+import SEO from '../components/common/SEO';
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -32,14 +33,19 @@ export default function Login() {
 
   return (
     <div className="bg-surface-dim text-on-surface min-h-screen flex items-center justify-center p-4 md:p-8" style={{ fontFamily: "'Manrope', sans-serif" }}>
+      <SEO 
+        title="Sign In - QuickCare" 
+        description="Securely access your QuickCare health records and appointments."
+      />
       <main className="w-full max-w-[1400px] bg-surface-container-low rounded-[2rem] overflow-hidden flex flex-col lg:flex-row shadow-[0_12px_40px_rgba(6,14,32,0.4)] relative z-10 min-h-[800px]">
         {/* Left Image Section */}
         <div className="hidden lg:flex lg:w-1/2 relative bg-surface-container-highest p-12 flex-col justify-between">
           <div className="absolute inset-0 z-0">
             <img
-              alt="Clinic Interior"
-              className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuABACu4O-K_NYj7yP_cuOSeTv-f1n58mnIWqGPPEsbItvwfPMUoPJI7pfD28C7kBPaySbBalcxy9E-S8I0ZZC-nulUCUFf7n9sUnUsjJ9NbEN4ORAxE9A6sBt3lR9GaML2pOsZp9XHm1DjKH814h1PMRskB4NVN1ySM4BgD4OBVs0TB6MY6t9TMJ2Yty2oQwmLbVzdzN_LFbTh7yL3qvd4XFmEfnu67cWUQjygKDVM5jAiv524FD07P8L3qCAer_DyTgp7N7g6RoeQ"
+              alt="QuickCare medical professionals providing global healthcare services"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_3bQ-mQhGgG-_YdY7o7d1u4YqB2m30yYd0sE_hDkM0-1yK8U_xQZlVj-K-gZ-e-P-o1P_zT1C7H5U2a7V9wX8Ua4t1jQn9Q1oTfWfJj4tXg_K3k6o9M4Yp_V4U1vXjH8c9s_q_R7V"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-dim/90 via-surface-dim/50 to-transparent"></div>
           </div>
@@ -155,11 +161,11 @@ export default function Login() {
             {/* Social Buttons */}
             <div className="grid grid-cols-2 gap-4">
               <button className="flex items-center justify-center gap-3 bg-transparent border border-outline-variant/20 rounded-lg py-3 hover:bg-surface-container-high transition-colors">
-                <img alt="Google" className="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPW2YzQgThrImN5Ws1GakJzFMFGRD_S_3RTjuxjyBBorSJjcojT0f_yz5Sg1lJe7eVguTJbG9iZyQPwQPOpMKAs3uRqJqiinpOxETW00F2J2I4NBb-y3O4REZo9AQ2ZyXLHY9mM0ohKqwl5gbK9lOK8wNrrRbaF5dqqgcgLfMgXjx1oXAK0iJLqBn1UNyxVF9GUjIig6ojSMQkZ_9GUECYpqI5yMRB0cQfmmZZH_mBDQi6YB0OgJb1h34In1krleB9YK-pOJ-ULsc" />
+                <img alt="Google logo" className="w-5 h-5" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPW2YzQgThrImN5Ws1GakJzFMFGRD_S_3RTjuxjyBBorSJjcojT0f_yz5Sg1lJe7eVguTJbG9iZyQPwQPOpMKAs3uRqJqiinpOxETW00F2J2I4NBb-y3O4REZo9AQ2ZyXLHY9mM0ohKqwl5gbK9lOK8wNrrRbaF5dqqgcgLfMgXjx1oXAK0iJLqBn1UNyxVF9GUjIig6ojSMQkZ_9GUECYpqI5yMRB0cQfmmZZH_mBDQi6YB0OgJb1h34In1krleB9YK-pOJ-ULsc" />
                 <span className="text-sm font-semibold text-on-surface">Google</span>
               </button>
               <button className="flex items-center justify-center gap-3 bg-transparent border border-outline-variant/20 rounded-lg py-3 hover:bg-surface-container-high transition-colors">
-                <img alt="Apple" className="w-5 h-5 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Hhuso4B4UX9dYw1mVytnE1Wnvmjd8QEr9xBrjioF1Z427mLgAj3kAJ4H69bKvs2b0GKYS0U9ejTqJ_1vLjgRHDc2brgABdTMX26Tan3XtyDrfOqGJKWmEtZLKDa5I4mEMv_4rvnuzer6nTl7BdXWtUHZF73Xf8KSE8F10sIkFYIvrfLZ4VWoI1Nk3xTlhE0Ks57m8CvWJnm2xH_JPeGzgHc1erRlxegCCmoog9dyVwcpAEjZoYLv3n88ZmOuDlFS7cUEjyZPtt4" />
+                <img alt="Apple logo" className="w-5 h-5 invert" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Hhuso4B4UX9dYw1mVytnE1Wnvmjd8QEr9xBrjioF1Z427mLgAj3kAJ4H69bKvs2b0GKYS0U9ejTqJ_1vLjgRHDc2brgABdTMX26Tan3XtyDrfOqGJKWmEtZLKDa5I4mEMv_4rvnuzer6nTl7BdXWtUHZF73Xf8KSE8F10sIkFYIvrfLZ4VWoI1Nk3xTlhE0Ks57m8CvWJnm2xH_JPeGzgHc1erRlxegCCmoog9dyVwcpAEjZoYLv3n88ZmOuDlFS7cUEjyZPtt4" />
                 <span className="text-sm font-semibold text-on-surface">Apple</span>
               </button>
             </div>

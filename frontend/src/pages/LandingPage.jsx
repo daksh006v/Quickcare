@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function LandingPage() {
   const navigate = useNavigate();
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+      <SEO 
+        title="QuickCare - Your Health, Our Priority" 
+        description="Connect with verified English-speaking doctors anywhere in the world. Book instant appointments, get prescriptions, and find care that understands you."
+      />
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm font-headline tracking-tight">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
@@ -75,9 +80,9 @@ export default function LandingPage() {
               </div>
               <div className="mt-12 flex items-center gap-6">
                 <div className="flex -space-x-4">
-                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="professional female doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNZy-j7tAx24KvlhaWDIary3Cuo84nVodOUJocbWDRZxAXPoQnFSV2UfV1zTZrwQfJWHJ9qI5TXX9WTftvllz4R4AIbBHhQUCyK4l9zRpuRtwlClg7TE8HJDWqM3P15gZyxi5uaRM69ke8T868V_QSuUb-HRYdZHhqQWCJ76tt19lJcdIHbyglyTib0Ib5A8zIHVKEHbBRcLoDJomL0dszN_pO9eWu50xHoHTyh88Tj3bKdstNxbRHN6EGQPXVIKVQjsfrxSt1Rdw"/>
-                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="friendly male physician" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgQFpiJo905YDfukcU2Fi-Y8GDwcAviw-h4-a3IJF9a0yCSJTnRPTOl7Wh_rFCeOxmNRem8vSlHWecLiUWDtn7T90cVNPniPTxN8JcTZsK2zUGTTaVOjddevecv4xV8mIIMejZlhOjCwDl6cO_wSmBBjL8PO3RAxBneDOiI9TvF_ZkH5I_FXgZZbL068KWoMreVWsusEmAnee5CdTvrBQDM78hhgPWDSc6LZCqOaPM3YO8X99FrhgecqUFeo-k1d4vKrMgFevmHN0"/>
-                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="confident young woman doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqXhZz3Z7Ph1MQlC9YuCs_3nTdX35cI1l8Fnzca32cUHbs0aMPR_ar3tn-0vprpMauULkXsTrOPGG2ioCfYaxs6-hSjFChMTF2VtyZUUmS2vKAR9hSmAtGKHbcuywV976SoBMzWoNG-t0YE_-Dr6XSv_P6hQCsE_NwSEHiJpHEde4OnRd9HfG7SjAuXSa3jGySYk7IH9KFJs61sr8faaW_oYFratruBCx88J-9dLNTHO_scw11i6U_CB0IQIhTNtydj8-ZDLDWw0"/>
+                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" alt="Verified female doctor providing English-speaking healthcare" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNZy-j7tAx24KvlhaWDIary3Cuo84nVodOUJocbWDRZxAXPoQnFSV2UfV1zTZrwQfJWHJ9qI5TXX9WTftvllz4R4AIbBHhQUCyK4l9zRpuRtwlClg7TE8HJDWqM3P15gZyxi5uaRM69ke8T868V_QSuUb-HRYdZHhqQWCJ76tt19lJcdIHbyglyTib0Ib5A8zIHVKEHbBRcLoDJomL0dszN_pO9eWu50xHoHTyh88Tj3bKdstNxbRHN6EGQPXVIKVQjsfrxSt1Rdw"/>
+                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" alt="Verified male physician specializing in international patient care" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgQFpiJo905YDfukcU2Fi-Y8GDwcAviw-h4-a3IJF9a0yCSJTnRPTOl7Wh_rFCeOxmNRem8vSlHWecLiUWDtn7T90cVNPniPTxN8JcTZsK2zUGTTaVOjddevecv4xV8mIIMejZlhOjCwDl6cO_wSmBBjL8PO3RAxBneDOiI9TvF_ZkH5I_FXgZZbL068KWoMreVWsusEmAnee5CdTvrBQDM78hhgPWDSc6LZCqOaPM3YO8X99FrhgecqUFeo-k1d4vKrMgFevmHN0"/>
+                  <img className="w-12 h-12 rounded-full border-4 border-surface object-cover" alt="Confident female general practitioner ready for telehealth consultation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqXhZz3Z7Ph1MQlC9YuCs_3nTdX35cI1l8Fnzca32cUHbs0aMPR_ar3tn-0vprpMauULkXsTrOPGG2ioCfYaxs6-hSjFChMTF2VtyZUUmS2vKAR9hSmAtGKHbcuywV976SoBMzWoNG-t0YE_-Dr6XSv_P6hQCsE_NwSEHiJpHEde4OnRd9HfG7SjAuXSa3jGySYk7IH9KFJs61sr8faaW_oYFratruBCx88J-9dLNTHO_scw11i6U_CB0IQIhTNtydj8-ZDLDWw0"/>
                 </div>
                 <p className="text-on-surface-variant font-medium">
                   <span className="text-primary font-bold">2400+</span> Verified doctors worldwide
@@ -86,7 +91,7 @@ export default function LandingPage() {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative">
-                <img className="w-full h-full object-cover" data-alt="modern luxury hotel lobby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlsPuXoo4CPxdbqd0XbTLhu_IWzlSmZ29ld-Oxqoc6MxIhRXfr7yMnAUeKULMi8oAmGgq5IxT1X5sHHhELmHEIAjNJEnQJBvLfiAKjiuipiDO-DruTR-Z_0dhsvY_-ZNkf8WtjSWasZQ9lR5gS-ksQdrKBR1z0nOn47oTyfmh8j9k-6uTXeDJoe6W3KE4VVFFuwwjcinMNwmb1t-y1SIFiyY9CQtuvZCTUHZjEgA5OeW754IAiyWNis_Pu3mrkfD6oWehx-gl2bMc"/>
+                <img className="w-full h-full object-cover" alt="Modern hospital lobby showcasing premium healthcare facilities" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlsPuXoo4CPxdbqd0XbTLhu_IWzlSmZ29ld-Oxqoc6MxIhRXfr7yMnAUeKULMi8oAmGgq5IxT1X5sHHhELmHEIAjNJEnQJBvLfiAKjiuipiDO-DruTR-Z_0dhsvY_-ZNkf8WtjSWasZQ9lR5gS-ksQdrKBR1z0nOn47oTyfmh8j9k-6uTXeDJoe6W3KE4VVFFuwwjcinMNwmb1t-y1SIFiyY9CQtuvZCTUHZjEgA5OeW754IAiyWNis_Pu3mrkfD6oWehx-gl2bMc"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
               </div>
               {/* Asymmetric floating card */}
@@ -155,7 +160,7 @@ export default function LandingPage() {
               {/* Doctor Card 1 */}
               <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/10">
                 <div className="relative aspect-video">
-                  <img className="w-full h-full object-cover" data-alt="professional male doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACMaLZ5JB4Stu1fcf8q0NNMNvOuSu-7ojqCalyado02tJSECSjEKxasmkJdOCoh2XS3QK_kDYZy6EiwVJv5C5L1b4YkzDbMqw9vc15qNSx1rtWPy0Z09VIb-TSnbTRFUe3ij03WFpzCNMhaGqP8KNKQg8NihDtRuQ_H1CIuH-4FKVh89pIVo-sOIGChMpAOFnxTd-tmkWncsPoURUWIrAeMLdqLt9OQWQ-AFUe47Ftv4apOf07X88sX_0cuY4V1knJHkMM7vSVk8Y"/>
+                  <img className="w-full h-full object-cover" alt="Dr. Kenji Tanaka, General Practitioner in Minato City, Tokyo" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACMaLZ5JB4Stu1fcf8q0NNMNvOuSu-7ojqCalyado02tJSECSjEKxasmkJdOCoh2XS3QK_kDYZy6EiwVJv5C5L1b4YkzDbMqw9vc15qNSx1rtWPy0Z09VIb-TSnbTRFUe3ij03WFpzCNMhaGqP8KNKQg8NihDtRuQ_H1CIuH-4FKVh89pIVo-sOIGChMpAOFnxTd-tmkWncsPoURUWIrAeMLdqLt9OQWQ-AFUe47Ftv4apOf07X88sX_0cuY4V1knJHkMM7vSVk8Y"/>
                   <div className="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">Available Now</div>
                 </div>
                 <div className="p-6">
@@ -184,7 +189,7 @@ export default function LandingPage() {
               {/* Doctor Card 2 */}
               <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/10">
                 <div className="relative aspect-video">
-                  <img className="w-full h-full object-cover" data-alt="female pediatrician" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCWcO-vsQ9i5HtiS_8tiRcqBJbhYSUlKhxFKkCFvgXx7sx8e2oyj5W-2x03RS8-voX7M19K70sHnFnSjUHNX4UwDL7OHWdMj0vrQezFK5O341RU8vX_6hQ4M8exrAhIRs9Y597aPOu5ljaIje3ziUvz7yMDikt7S-_lDgt3T8cGvl4tiJIkwitygU2ROvIbZv49VBy3CdLxqcwGuVTHfh2PdJh6XHxOB4QsoOyRA0Sy7jZB9YpIjIET9pO5dW5W23G3B_Z2ByJXnY"/>
+                  <img className="w-full h-full object-cover" alt="Dr. Sarah Miller, US Board Certified Pediatrician in Shibuya, Tokyo" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCWcO-vsQ9i5HtiS_8tiRcqBJbhYSUlKhxFKkCFvgXx7sx8e2oyj5W-2x03RS8-voX7M19K70sHnFnSjUHNX4UwDL7OHWdMj0vrQezFK5O341RU8vX_6hQ4M8exrAhIRs9Y597aPOu5ljaIje3ziUvz7yMDikt7S-_lDgt3T8cGvl4tiJIkwitygU2ROvIbZv49VBy3CdLxqcwGuVTHfh2PdJh6XHxOB4QsoOyRA0Sy7jZB9YpIjIET9pO5dW5W23G3B_Z2ByJXnY"/>
                   <div className="absolute top-4 right-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold">Next available: 2:30 PM</div>
                 </div>
                 <div className="p-6">
@@ -213,7 +218,7 @@ export default function LandingPage() {
               {/* Doctor Card 3 */}
               <div className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant/10">
                 <div className="relative aspect-video">
-                  <img className="w-full h-full object-cover" data-alt="modern dental surgery room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuDnzybkzLqFhcWaqRPHyH9gFfqiAj9M0LKfPHCXYx6noWyuSlV_RxhabWw-Uu7k6rRQ1wTWqyofgJJgrPuA7gWH1IVFf9QhloSg-LQW8cq1W_Z9eY7HaVUxYHMSUjPBn3fiKnmdaM04o4bnhqLXfPPmLpAAWsfrIXk9y-WYB7fOSlK9qDU_y0rOdfFH3NIejcKUZIgPq-0wM8xF_6_t9zDQQsiimb1d9iPq9kjrwWpqmmPyT69KOL9xvunF7ahJarzcOSHleO0y4"/>
+                  <img className="w-full h-full object-cover" alt="Dr. Elena Rossi, Dermatologist and Emergency Specialist in Chiyoda, Tokyo" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuDnzybkzLqFhcWaqRPHyH9gFfqiAj9M0LKfPHCXYx6noWyuSlV_RxhabWw-Uu7k6rRQ1wTWqyofgJJgrPuA7gWH1IVFf9QhloSg-LQW8cq1W_Z9eY7HaVUxYHMSUjPBn3fiKnmdaM04o4bnhqLXfPPmLpAAWsfrIXk9y-WYB7fOSlK9qDU_y0rOdfFH3NIejcKUZIgPq-0wM8xF_6_t9zDQQsiimb1d9iPq9kjrwWpqmmPyT69KOL9xvunF7ahJarzcOSHleO0y4"/>
                   <div className="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">Available Now</div>
                 </div>
                 <div className="p-6">

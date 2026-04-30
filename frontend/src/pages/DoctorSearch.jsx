@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function DoctorSearch() {
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+      <SEO 
+        title="Find Care - QuickCare" 
+        description="Search and filter verified English-speaking doctors by location, specialty, price, and distance."
+      />
       {/* TopNavBar */}
       <header className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
         <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto font-manrope tracking-tight">
@@ -69,7 +74,7 @@ export default function DoctorSearch() {
           {/* Results List (Left) */}
           <aside className="w-full lg:w-[540px] xl:w-[600px] overflow-y-auto bg-surface p-6 space-y-6 custom-scrollbar">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-headline font-bold text-on-surface">42 Doctors found in Tokyo</h2>
+              <h1 className="text-xl font-headline font-bold text-on-surface">42 Doctors found in Tokyo</h1>
               <span className="text-label-md text-outline font-medium">Sorted by: Relevance</span>
             </div>
 
@@ -77,7 +82,7 @@ export default function DoctorSearch() {
             <div className="bg-surface-container-lowest p-5 rounded-xl transition-all hover:ring-1 hover:ring-primary/20 flex flex-col gap-5 group">
               <div className="flex gap-4">
                 <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0">
-                  <img className="w-full h-full object-cover" data-alt="professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE5DmPK6WEKHyjSa-80Q69OYtDHTvjbyLrPG2wQrel-CmaPvOLGQoNzxXOSHWNq2_Cdh3T8N-LgUqbhZBxmV1RS5QTdtAKHji123ztbSmIzlZTdxbSilL4wZOzbgOAlYFrTWp586Uqtt-WzkoQGzW2o9Ou0Aae--L-dLLxHQ2ensNyM8tiR56j9snE0w2p2PR5KgpVaP863k3yl-Cn5TAnH6cqTEiCrzlx3Ge3IGCORFeJFfWBvM_Uv5JghU2PI6ck1xmwPSHI8ZM" />
+                  <img className="w-full h-full object-cover" alt="Dr. Elena Sato, Senior Cardiologist portrait" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE5DmPK6WEKHyjSa-80Q69OYtDHTvjbyLrPG2wQrel-CmaPvOLGQoNzxXOSHWNq2_Cdh3T8N-LgUqbhZBxmV1RS5QTdtAKHji123ztbSmIzlZTdxbSilL4wZOzbgOAlYFrTWp586Uqtt-WzkoQGzW2o9Ou0Aae--L-dLLxHQ2ensNyM8tiR56j9snE0w2p2PR5KgpVaP863k3yl-Cn5TAnH6cqTEiCrzlx3Ge3IGCORFeJFfWBvM_Uv5JghU2PI6ck1xmwPSHI8ZM" />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start">
@@ -127,7 +132,7 @@ export default function DoctorSearch() {
             <div className="bg-surface-container-lowest p-5 rounded-xl transition-all hover:ring-1 hover:ring-primary/20 flex flex-col gap-5 group">
               <div className="flex gap-4">
                 <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0">
-                  <img className="w-full h-full object-cover" data-alt="close-up of young male doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkunO8WgCpaMvvsNULIjy0zBDDvEvLbw4gJwM_9-qSkNRvUw-7upnWPhFAnMlUm6U41fP79ejzKzlGVx5zymcCuJq6kQVxML00DQZ_BhlnhkdUfTC-yZNnFi0JoiLwDXTg2Fx9m3w-ulu6XRgzsaaBByxxhrFkxSWbuqPhJOhqpYbQ-zQvJBpom2dpgAmNakGP17_tnsYYRCLtr80VTT_HDoFMqsuAsxaAsLaYEzgJNZLgly-GjFBIURZtIi2OSVU6r_txUTVVS6E" />
+                  <img className="w-full h-full object-cover" alt="Dr. Marcus Chen, Internal Medicine specialist portrait" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkunO8WgCpaMvvsNULIjy0zBDDvEvLbw4gJwM_9-qSkNRvUw-7upnWPhFAnMlUm6U41fP79ejzKzlGVx5zymcCuJq6kQVxML00DQZ_BhlnhkdUfTC-yZNnFi0JoiLwDXTg2Fx9m3w-ulu6XRgzsaaBByxxhrFkxSWbuqPhJOhqpYbQ-zQvJBpom2dpgAmNakGP17_tnsYYRCLtr80VTT_HDoFMqsuAsxaAsLaYEzgJNZLgly-GjFBIURZtIi2OSVU6r_txUTVVS6E" />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start">
@@ -177,7 +182,7 @@ export default function DoctorSearch() {
             <div className="bg-surface-container-lowest p-5 rounded-xl transition-all hover:ring-1 hover:ring-primary/20 flex flex-col gap-5 group opacity-75 grayscale-[0.5]">
               <div className="flex gap-4">
                 <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0">
-                  <img className="w-full h-full object-cover" data-alt="professional medical expert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXMZCZG0GEKYntsCWmgQ3qQnvYkR3Eaoo0cK71wX4ki_BWT0AoW6ULGuoD24YGExbuIB1frpVyzNbMwm8_-e_NDRg5xE2i_nz136oCn4fmOPPqwzHTjDMXlTJfOfhQmo8eu5NK0fvRdQgtnsP3_nlfwuLkQ0cl6oxH8d8SwuNSCRgHwvc2p3XDLDo4K8rsvKnlcDjIplytgB0wkXrBZWO6AeLId7OzViF_My334UEVDWwy4jLiCaW_ra2SdBZBAIAvcqYqZoTPR4" />
+                  <img className="w-full h-full object-cover" alt="Dr. Sofia Rossi, Pediatric Specialist portrait" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXMZCZG0GEKYntsCWmgQ3qQnvYkR3Eaoo0cK71wX4ki_BWT0AoW6ULGuoD24YGExbuIB1frpVyzNbMwm8_-e_NDRg5xE2i_nz136oCn4fmOPPqwzHTjDMXlTJfOfhQmo8eu5NK0fvRdQgtnsP3_nlfwuLkQ0cl6oxH8d8SwuNSCRgHwvc2p3XDLDo4K8rsvKnlcDjIplytgB0wkXrBZWO6AeLId7OzViF_My334UEVDWwy4jLiCaW_ra2SdBZBAIAvcqYqZoTPR4" />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-start">
@@ -236,7 +241,7 @@ export default function DoctorSearch() {
               <div className="absolute top-1/4 left-1/3 pointer-events-auto transform -translate-x-1/2 -translate-y-full cursor-pointer group">
                 <div className="bg-primary text-white p-2 rounded-xl shadow-lg flex items-center gap-2 whitespace-nowrap transition-transform group-hover:scale-110">
                   <div className="w-8 h-8 rounded-lg overflow-hidden border-2 border-white">
-                    <img className="w-full h-full object-cover" data-alt="thumbnail of female doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHnkaz-G0U81l8_QPN2Y8YxZLwf3TM_5aGBS-Vx8DmqnDHLgRYzORrfFSVxUDVGHyh_Y3x_Yy2yUHX9Zr3cekkxKXEfixukZ-wCBOc4v_IeSvzeBtpRnTTCvy9BqHl_3aBgwOppInu-jxjlLLkM_-5T0p54xYBlNod8LKv6lwg8c3-PzZNTsghxaOTSy9hOzoh5T9UwY2RCAPBiRWYGWbTqYg_pYdXL1BMSaxIlwmcHThClHuQO1ClSGYN3y1p91zQWiXKr--OhxE" />
+                    <img className="w-full h-full object-cover" alt="Dr. Elena Sato map marker thumbnail" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHnkaz-G0U81l8_QPN2Y8YxZLwf3TM_5aGBS-Vx8DmqnDHLgRYzORrfFSVxUDVGHyh_Y3x_Yy2yUHX9Zr3cekkxKXEfixukZ-wCBOc4v_IeSvzeBtpRnTTCvy9BqHl_3aBgwOppInu-jxjlLLkM_-5T0p54xYBlNod8LKv6lwg8c3-PzZNTsghxaOTSy9hOzoh5T9UwY2RCAPBiRWYGWbTqYg_pYdXL1BMSaxIlwmcHThClHuQO1ClSGYN3y1p91zQWiXKr--OhxE" />
                   </div>
                   <div className="pr-2">
                     <p className="text-xs font-bold leading-none">Dr. Elena Sato</p>
@@ -250,7 +255,7 @@ export default function DoctorSearch() {
               <div className="absolute top-2/3 right-1/4 pointer-events-auto transform -translate-x-1/2 -translate-y-full cursor-pointer group">
                 <div className="bg-surface-container-lowest text-on-surface p-2 rounded-xl shadow-lg flex items-center gap-2 whitespace-nowrap transition-transform group-hover:scale-110">
                   <div className="w-8 h-8 rounded-lg overflow-hidden border-2 border-primary-container">
-                    <img className="w-full h-full object-cover" data-alt="thumbnail of male doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_nEeZSVLOE5kPjqUiCuzIrr4M9AVOT871gQE31-z635EYWbct0Cqk-znwRmhwzSzNefII3tFa58vTj9PNsS5Rw_6zmGmy88DjL45aVeWuMAGUSMiyMTVL_bxUA67t1x88jo3ALQK8LvMulSBoovHtnRaPycDXtvVvbJqA6h5LWeYYVjPCv6Rp94QpgwDHb5QQJUrnd0IFFAPS-oVEzONYf_g28Y7hleLKfsBTjPe4vxgG_HrHwPCaY2kaN-DgkpxcvcUBzMcwNDI" />
+                    <img className="w-full h-full object-cover" alt="Dr. Marcus Chen map marker thumbnail" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_nEeZSVLOE5kPjqUiCuzIrr4M9AVOT871gQE31-z635EYWbct0Cqk-znwRmhwzSzNefII3tFa58vTj9PNsS5Rw_6zmGmy88DjL45aVeWuMAGUSMiyMTVL_bxUA67t1x88jo3ALQK8LvMulSBoovHtnRaPycDXtvVvbJqA6h5LWeYYVjPCv6Rp94QpgwDHb5QQJUrnd0IFFAPS-oVEzONYf_g28Y7hleLKfsBTjPe4vxgG_HrHwPCaY2kaN-DgkpxcvcUBzMcwNDI" />
                   </div>
                   <div className="pr-2">
                     <p className="text-xs font-bold leading-none">Dr. Marcus Chen</p>

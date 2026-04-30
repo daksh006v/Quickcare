@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function TravelerMode() {
   return (
     <div className="font-body-md text-on-surface antialiased bg-surface min-h-screen">
+      <SEO 
+        title="Traveler Mode - QuickCare" 
+        description="Access immediate medical assistance, translation cards, and emergency directions tailored for travelers."
+      />
       {/* TopNavBar */}
       <header className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-200">
         <div className="flex justify-between items-center px-8 h-20 max-w-[1280px] mx-auto">

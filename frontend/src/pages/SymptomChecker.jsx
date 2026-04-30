@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from '../components/ThemeToggle';
+import SEO from '../components/common/SEO';
 
 export default function SymptomChecker() {
   return (
     <div className="bg-surface text-on-surface min-h-screen flex flex-col">
+      <SEO 
+        title="AI Symptom Checker - QuickCare" 
+        description="Describe how you're feeling and our AI assistant will help guide you to the right level of care while you travel."
+      />
         {/* TopNavBar */}
         <nav className="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
             <div className="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
