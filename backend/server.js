@@ -2,13 +2,13 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const path = require('path');
-// const connectDB = require('./config/db');
+const connectDB = require('./config/db');
 
 // Load environment variables
 dotenv.config();
 
-// Connect to MongoDB (Disabled for frontend-only deployment)
-// connectDB();
+// Connect to MongoDB
+connectDB();
 
 const app = express();
 
